@@ -85,7 +85,7 @@ static  int opcion;
      int[] produccion = {30,34,28,45,21,50,29,1};
         for (int i = 0; i < produccion.length; i++) {
             for (int j = 0; j < produccion.length-1; j++) {
-                    if(produccion[j]>j+1){
+                    if(produccion[j]>produccion[j+1]){
                         int temp = produccion[j];
                         produccion[j] = produccion[j+1];
                         produccion[j+1]= temp;
@@ -97,6 +97,7 @@ static  int opcion;
             }
          
             }
+       
         int sumaPeso=0;
         int sumalitros = 0;
        for (int j = produccion.length-1; j>=0; j--) {
@@ -115,10 +116,10 @@ static  int opcion;
       int numvacas = 10;
     int pesoMax = 2000;
      int[ ] pesoVacas =  {340,355,223,243,130,240,260,155,302,130};
-     int[] produccion = { 30,34,28,45,31,50,29,1};
+     int[] produccion = {45,50,34,39,29,40,30,52,31,1};
         for (int i = 0; i < produccion.length; i++) {
             for (int j = 0; j < produccion.length-1; j++) {
-                    if(produccion[j]>j+1){
+                    if(produccion[j]>produccion[j+1]){
                         int temp = produccion[j];
                         produccion[j] = produccion[j+1];
                         produccion[j+1]= temp;
@@ -128,8 +129,9 @@ static  int opcion;
                     
                     }
             }
-         
+            
             }
+    
         int sumaPeso=0;
         int sumalitros = 0;
        for (int j = produccion.length-1; j>=0; j--) {
